@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="#ccfbff">
+
+        <ImageButton
+            android:id="@+id/IB1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ccfbff"
+            android:contentDescription="@string/todo2"
+            android:padding="10dp"
+            android:src="@drawable/icon_menu" />
+
+        <TextView
+            android:id="@+id/TV1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="#ccfbff"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/setting_privacy"
+            android:textAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/IP1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/LL1"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/todo3"
+        android:src="@drawable/download__4_"
+        tools:contentDescription="signal" />
+
+    <TextView
+        android:id="@+id/TV2"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/LL1"
+        android:layout_toEndOf="@id/IP1"
+        android:layout_toRightOf="@id/IP1"
+        android:fontFamily="monospace"
+        android:gravity="center|start"
+        android:text="@string/string_connection"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <View
+        android:layout_below="@id/IP1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <ImageView
+        android:id="@+id/IP2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/IP1"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/todo4"
+        android:src="@drawable/images__13_" />
+
+    <TextView
+        android:id="@+id/TV3"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/IP1"
+        android:layout_toEndOf="@id/IP2"
+        android:layout_toRightOf="@id/IP2"
+        android:fontFamily="monospace"
+        android:gravity="center|start"
+        android:text="@string/sound"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <View
+        android:layout_below="@id/IP2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <ImageView
+        android:id="@+id/IP3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/IP2"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/string_safe"
+        android:padding="10dp"
+        android:src="@drawable/download__3_" />
+
+    <TextView
+        android:id="@+id/TV4"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/IP2"
+        android:layout_toEndOf="@id/IP3"
+        android:layout_toRightOf="@id/IP3"
+        android:fontFamily="monospace"
+        android:gravity="center|start"
+        android:text="@string/string_security"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <View
+        android:layout_below="@id/IP3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <ImageView
+        android:id="@+id/IP4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/IP3"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/string_place"
+        android:src="@drawable/download__5_" />
+
+    <TextView
+        android:id="@+id/TV5"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/IP3"
+        android:layout_toEndOf="@id/IP4"
+        android:layout_toRightOf="@id/IP4"
+        android:fontFamily="monospace"
+        android:gravity="center|start"
+        android:text="@string/string_location"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <View
+        android:layout_below="@id/IP4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <ImageView
+        android:id="@+id/IP5"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/IP4"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/chatting"
+        android:padding="10dp"
+        android:src="@drawable/chat" />
+
+    <TextView
+        android:id="@+id/TV6"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/IP4"
+        android:layout_marginTop="9dp"
+        android:layout_toEndOf="@id/IP5"
+        android:layout_toRightOf="@id/IP5"
+        android:fontFamily="monospace"
+        android:foregroundGravity="center_vertical"
+        android:gravity="center|start"
+        android:text="@string/chats"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_below="@id/IP5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <ImageView
+        android:id="@+id/IP6"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/IP5"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/string_string_chingu"
+        android:padding="10dp"
+        android:src="@drawable/ic_friends" />
+
+    <TextView
+        android:id="@+id/TV7"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/IP5"
+        android:layout_toEndOf="@id/IP6"
+        android:layout_toRightOf="@id/IP6"
+        android:fontFamily="monospace"
+        android:gravity="center|start"
+        android:text="@string/friends"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <View
+        android:layout_below="@id/IP6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <ImageView
+        android:id="@+id/IP7"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/IP6"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/string_gambar1"
+        android:padding="10dp"
+        android:src="@drawable/media" />
+
+    <TextView
+        android:id="@+id/TV8"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/IP6"
+        android:layout_toEndOf="@id/IP7"
+        android:layout_toRightOf="@id/IP7"
+        android:fontFamily="monospace"
+        android:gravity="center|start"
+        android:text="@string/media"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="#ccfbff">
+
+        <ImageButton
+            android:id="@+id/IB1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ccfbff"
+            android:contentDescription="@string/menuu"
+            android:padding="10dp"
+            android:src="@drawable/icon_menu" />
+
+        <TextView
+            android:id="@+id/TV1"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="#ccfbff"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/list_friend"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButton15"
+            android:layout_width="11dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ccfbff"
+            android:contentDescription="@string/add"
+            app:srcCompat="@drawable/ic_add"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ccfbff"
+            android:contentDescription="@string/pesann"
+            app:srcCompat="@drawable/ic_pesan"
+            tools:ignore="VectorDrawableCompat"/>
+
+
+    </LinearLayout>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/IP1"
+        android:layout_below="@id/LL1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/pentol2" />
+
+    <TextView
+        android:id="@+id/TV2"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/LL1"
+        android:layout_toEndOf="@id/IP1"
+        android:layout_toRightOf="@id/IP1"
+        android:fontFamily="monospace"
+        android:gravity="center|start"
+        android:text="@string/hello"
+        android:textColor="@android:color/black"
+        android:textSize="23sp" />
+    <View
+        android:layout_below="@id/IP1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/IP2"
+        android:layout_below="@id/IP1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/pentol3" />
+
+    <TextView
+        android:id="@+id/TV3"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/IP1"
+        android:layout_toEndOf="@id/IP2"
+        android:layout_toRightOf="@id/IP2"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="@string/victor"
+        android:textColor="@android:color/black"
+        android:textSize="23sp"
+        tools:gravity="center_vertical" />
+    <View
+        android:layout_below="@id/IP2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/IP3"
+        android:layout_below="@id/IP2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/pentol" />
+
+    <TextView
+        android:id="@+id/TV4"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/IP2"
+        android:layout_toEndOf="@id/IP3"
+        android:layout_toRightOf="@id/IP3"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="@string/mandarina"
+        android:textColor="@android:color/black"
+        android:textSize="23sp"
+        tools:gravity="center_vertical"  />
+    <View
+        android:layout_below="@id/IP3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/IP4"
+        android:layout_below="@id/IP3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/images__6_" />
+
+    <TextView
+        android:id="@+id/TV5"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/IP3"
+        android:layout_toEndOf="@id/IP4"
+        android:layout_toRightOf="@id/IP4"
+        android:fontFamily="monospace"
+        android:gravity="center|start"
+        android:text="@string/pinky"
+        android:textColor="@android:color/black"
+        android:textSize="23sp"
+        tools:gravity="center_vertical" />
+    <View
+        android:layout_below="@id/IP4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/IP5"
+        android:layout_below="@id/IP4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/images__3_"/>
+
+    <TextView
+        android:id="@+id/TV6"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/IP4"
+        android:layout_marginTop="9dp"
+        android:layout_toEndOf="@id/IP5"
+        android:layout_toRightOf="@id/IP5"
+        android:fontFamily="monospace"
+        android:foregroundGravity="center_vertical"
+        android:gravity="center|start"
+        android:text="@string/secret"
+        android:textColor="@android:color/black"
+        android:textSize="23sp"
+        tools:gravity="center_vertical" />
+
+    <View
+        android:layout_below="@id/IP5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/IP6"
+        android:layout_below="@id/IP5"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:src= "@drawable/jam"/>
+
+    <TextView
+        android:id="@+id/TV7"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/IP5"
+        android:layout_toEndOf="@id/IP6"
+        android:layout_toRightOf="@id/IP6"
+        android:fontFamily="monospace"
+        android:gravity="center|start"
+        android:text="@string/beauty"
+        android:textColor="@android:color/black"
+        android:textSize="23sp"
+        tools:gravity="center_vertical" />
+    <View
+        android:layout_below="@id/IP6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/IP7"
+        android:layout_below="@id/IP6"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/pentoll6" />
+
+    <TextView
+        android:id="@+id/TV8"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/IP6"
+        android:layout_toEndOf="@id/IP7"
+        android:layout_toRightOf="@id/IP7"
+        android:fontFamily="monospace"
+        android:gravity="center|start"
+        android:text="@string/pocky"
+        android:textColor="@android:color/black"
+        android:textSize="23sp"
+        tools:gravity="center_vertical" />
+    <View
+        android:layout_below="@id/IP7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</RelativeLayout>

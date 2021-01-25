@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:layout_gravity="bottom"
+    android:background="#FFFFFF"
+    tools:context=".comment">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/cmtIP1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/pentol2" />
+
+    <TextView
+        android:id="@+id/cmtTV1"
+        android:layout_width="265dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/cmtIP1"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="@string/kanbe"
+        android:textColor="@android:color/black"
+        android:textSize="23sp"
+        android:layout_toEndOf="@id/cmtIP1" />
+
+    <TextView
+        android:id="@+id/cmtTV2"
+        android:layout_width="265dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/cmtTV1"
+        android:layout_toEndOf="@id/cmtIP1"
+        android:layout_toRightOf="@id/cmtIP1"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="@string/amazing"
+        android:textColor="@android:color/black"
+        android:textSize="19sp" />
+
+    <ImageButton
+        android:id="@+id/cmtIB1"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/cmtTV1"
+        android:background="@android:color/white"
+        android:contentDescription="@string/lovely"
+        android:src="@drawable/love"
+        android:layout_toEndOf="@id/cmtTV1" />
+
+    <ImageButton
+        android:id="@+id/cmtIB2"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/cmtIB1"
+        android:layout_toRightOf="@id/cmtTV2"
+        android:background="@android:color/white"
+        android:src="@drawable/icon_comment"
+        android:layout_toEndOf="@id/cmtTV2" />
+
+    <view
+        android:id="@+id/cmtV1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/cmtIP1" />
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/cmtIP2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/cmtIP1"
+        android:layout_margin="10dp"
+        android:src="@drawable/pentol2" />
+
+    <TextView
+        android:id="@+id/cmtTV3"
+        android:layout_width="265dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/cmtIP1"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/cmtIP2"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="DJ ALOK"
+        android:textColor="@android:color/black"
+        android:textSize="23sp"
+        android:layout_toEndOf="@id/cmtIP2" />
+
+    <TextView
+        android:id="@+id/cmtTV4"
+        android:layout_width="265dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/cmtTV3"
+        android:layout_toEndOf="@id/cmtIP1"
+        android:layout_toRightOf="@id/cmtIP2"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="@string/it_s_really_helpfull"
+        android:textColor="@android:color/black"
+        android:textSize="19sp" />
+
+    <ImageButton
+        android:id="@+id/cmtIB3"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/cmtV1"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/cmtTV3"
+        android:background="@android:color/white"
+        android:src="@drawable/love"
+        android:layout_toEndOf="@id/cmtTV3" />
+
+    <ImageButton
+        android:id="@+id/cmtIB4"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/cmtIB3"
+        android:layout_toRightOf="@id/cmtTV4"
+        android:background="@android:color/white"
+        android:src="@drawable/icon_comment"
+        android:layout_toEndOf="@id/cmtTV4" />
+
+    <view
+        android:id="@+id/cmtV2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/cmtIP2" />
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/cmtIP3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/cmtIP2"
+        android:layout_margin="10dp"
+        android:src="@drawable/pentol2" />
+
+    <TextView
+        android:id="@+id/cmtTV5"
+        android:layout_width="265dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/cmtIP2"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/cmtIP3"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="David KW12"
+        android:textColor="@android:color/black"
+        android:textSize="23sp"
+        android:layout_toEndOf="@id/cmtIP3" />
+
+    <TextView
+        android:id="@+id/cmtTV6"
+        android:layout_width="265dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/cmtTV5"
+        android:layout_toEndOf="@id/cmtIP1"
+        android:layout_toRightOf="@id/cmtIP3"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="@string/halo_david_disini"
+        android:textColor="@android:color/black"
+        android:textSize="19sp" />
+
+    <ImageButton
+        android:id="@+id/cmtIB5"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/cmtV2"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/cmtTV5"
+        android:background="@android:color/white"
+        android:src="@drawable/love"
+        android:layout_toEndOf="@id/cmtTV5" />
+
+    <ImageButton
+        android:id="@+id/cmtIB6"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/cmtIB5"
+        android:layout_toRightOf="@id/cmtTV6"
+        android:background="@android:color/white"
+        android:src="@drawable/icon_comment"
+        android:layout_toEndOf="@id/cmtTV6" />
+
+    <view
+        android:id="@+id/cmtV3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/cmtIP3" />
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/cmtIP4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/cmtIP3"
+        android:layout_margin="10dp"
+        android:src="@drawable/pentol2" />
+
+    <TextView
+        android:id="@+id/cmtTV7"
+        android:layout_width="265dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/cmtIP3"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/cmtIP4"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="Russell Adler"
+        android:textColor="@android:color/black"
+        android:textSize="23sp"
+        android:layout_toEndOf="@id/cmtIP4" />
+
+    <TextView
+        android:id="@+id/cmtTV8"
+        android:layout_width="265dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/cmtTV7"
+        android:layout_toEndOf="@id/cmtIP1"
+        android:layout_toRightOf="@id/cmtIP4"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="@string/hy_kawan"
+        android:textColor="@android:color/black"
+        android:textSize="19sp" />
+
+    <ImageButton
+        android:id="@+id/cmtIB7"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/cmtV3"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/cmtTV7"
+        android:background="@android:color/white"
+        android:src="@drawable/love"
+        android:layout_toEndOf="@id/cmtTV7" />
+
+    <ImageButton
+        android:id="@+id/cmtIB8"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/cmtIB7"
+        android:layout_toRightOf="@id/cmtTV8"
+        android:background="@android:color/white"
+        android:src="@drawable/icon_comment"
+        android:layout_toEndOf="@id/cmtTV8" />
+
+    <view
+        android:id="@+id/cmtV4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/cmtIP4" />
+
+    <TextView
+        android:id="@+id/cmtTV9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cmtV4"
+        android:layout_marginLeft="175dp"
+        android:text="see more"
+        android:textColor="#43D9E5"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/cmtET1"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/cmtTV9"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/holo_blue_bright"
+        android:hint="@string/type_comment"
+        android:inputType="textLongMessage"
+        android:paddingStart="8dp"
+        android:autofillHints="" />
+
+    <Button
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cmtTV9"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/cmtET1"
+        android:backgroundTint="#3DBDFC"
+        app:icon="@drawable/ic_send" />
+
+</RelativeLayout>

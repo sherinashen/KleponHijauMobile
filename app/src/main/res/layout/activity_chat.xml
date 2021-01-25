@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="#ccfbff">
+
+        <ImageButton
+            android:id="@+id/IB1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ccfbff"
+            android:contentDescription="@string/todo2"
+            android:padding="10dp"
+            android:src="@drawable/icon_menu" />
+
+        <TextView
+            android:id="@+id/TV1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:background="#ccfbff"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/chat"
+            android:textAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/IP1"
+        android:layout_below="@id/LL1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/pentol2" />
+
+    <TextView
+        android:id="@+id/TV2"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/LL1"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/IP1"
+        android:layout_toRightOf="@id/IP1"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="@string/hello"
+        android:textColor="@android:color/black"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/TV3"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/TV2"
+        android:layout_toRightOf="@id/IP1"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="@string/oppa"
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/IP1" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/LL1"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/TV2"
+        android:layout_toRightOf="@id/TV2"
+        android:contentDescription="@string/angka1"
+         />
+
+    <TextView
+        android:layout_width="41dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LL1"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@id/TV2"
+        android:background="@drawable/round"
+        android:gravity="center"
+        android:text="@string/_1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@id/TV2" />
+
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/IP2"
+        android:layout_below="@id/IP1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/pentol3" />
+
+    <TextView
+        android:id="@+id/TV4"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/IP1"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/IP2"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="@string/victoria"
+        android:textColor="@android:color/black"
+        android:textSize="23sp"
+        android:layout_toEndOf="@id/IP2" />
+
+    <TextView
+        android:id="@+id/TV5"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/TV4"
+        android:layout_toRightOf="@id/IP2"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="@string/string_dimana"
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/IP2" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/IP1"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@id/TV4"
+        android:layout_toRightOf="@id/TV4"
+        android:contentDescription="@string/angka2"
+         />
+
+    <TextView
+        android:layout_width="39dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IP1"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="6dp"
+        android:layout_toRightOf="@id/TV4"
+        android:background="@drawable/round"
+        android:gravity="center"
+        android:text="@string/_2"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@id/TV4" />
+
+
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/IP3"
+        android:layout_below="@id/IP2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/images__1_" />
+
+    <TextView
+        android:id="@+id/TV6"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/IP2"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/IP3"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="@string/mandarina"
+        android:textColor="@android:color/black"
+        android:textSize="23sp"
+        android:layout_toEndOf="@id/IP3" />
+
+    <TextView
+        android:id="@+id/TV7"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/TV6"
+        android:layout_toRightOf="@id/IP3"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="@string/kemarin_kan"
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        android:layout_toEndOf="@id/IP3" />
+
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/IP4"
+        android:layout_below="@id/IP3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/images__6_" />
+
+    <TextView
+        android:id="@+id/TV8"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/IP3"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/IP4"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="@string/pinky"
+        android:textColor="@android:color/black"
+        android:textSize="23sp"
+        android:layout_toEndOf="@id/IP4" />
+
+    <TextView
+        android:id="@+id/TV9"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/TV8"
+        android:layout_toRightOf="@id/IP4"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="@string/hi_aku_sad_boi"
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/IP4" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/IP3"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/TV8"
+        android:layout_toRightOf="@id/TV8"
+        android:contentDescription="@string/string_angka5"
+         />
+
+    <TextView
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IP3"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@id/TV8"
+        android:background="@drawable/round"
+        android:gravity="center"
+        android:text="@string/_5"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@id/TV8" />
+
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/IP5"
+        android:layout_below="@id/IP4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/images__3_" />
+
+    <TextView
+        android:id="@+id/TV10"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/IP4"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/IP5"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="@string/secret"
+        android:textColor="@android:color/black"
+        android:textSize="23sp"
+        android:layout_toEndOf="@id/IP5" />
+
+    <TextView
+        android:id="@+id/TV11"
+        android:layout_width="268dp"
+        android:layout_height="28dp"
+        android:layout_below="@id/TV10"
+        android:layout_toEndOf="@id/IP5"
+        android:layout_toRightOf="@id/IP5"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="@string/wo_you_hua_yao_gen_ni"
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/IP4"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/TV10"
+        android:layout_toRightOf="@id/TV10"
+        android:contentDescription="@string/angkaa1"
+        />
+
+    <TextView
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IP4"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@id/TV10"
+        android:background="@drawable/round"
+        android:gravity="center"
+        android:text="@string/_1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@id/TV10" />
+
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/IP6"
+        android:layout_below="@id/IP5"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/images__6_" />
+
+    <TextView
+        android:id="@+id/TV12"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/IP5"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/IP6"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="@string/beauty"
+        android:textColor="@android:color/black"
+        android:textSize="23sp"
+        android:layout_toEndOf="@id/IP6" />
+
+    <TextView
+        android:id="@+id/TV13"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/TV12"
+        android:layout_toEndOf="@id/IP5"
+        android:layout_toRightOf="@id/IP5"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="@string/string_andwaeee"
+        android:textColor="@android:color/black"
+        android:textSize="19sp" />
+
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/IP7"
+        android:layout_below="@id/IP6"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/pentoll6" />
+
+    <TextView
+        android:id="@+id/TV14"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/IP6"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/IP7"
+        android:layout_toRightOf="@id/IP7"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="@string/pocky"
+        android:textColor="@android:color/black"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/TV15"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/TV14"
+        android:layout_toRightOf="@id/IP6"
+        android:fontFamily="monospace"
+        android:gravity="start"
+        android:text="@string/who_are_you"
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        android:layout_toEndOf="@id/IP6" />
+
+</RelativeLayout>

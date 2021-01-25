@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="#ccfbff"
+    android:gravity="start"
+    android:orientation="vertical"
+    tools:context=".MainActivity4">
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/B1"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/profile3"
+        android:textSize="12sp"
+        app:backgroundTint="@android:color/white"
+        app:icon="@drawable/ic_id"
+        tools:text="Profile" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/B2"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/list_friend3"
+        android:textSize="12sp"
+        app:backgroundTint="@android:color/white"
+        app:icon="@drawable/ic_friends"
+        tools:text="List Friend" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/B3"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/list_group"
+        android:textSize="12sp"
+        app:backgroundTint="@android:color/white"
+        app:icon="@drawable/ic_group"
+        tools:text="List Group" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/B4"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_margin="12dp"
+        android:text="@string/list_community"
+        android:textSize="12sp"
+        app:backgroundTint="@android:color/white"
+        app:icon="@drawable/ic_comunity"
+        tools:text="List Community" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/B5"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/option"
+        android:textSize="12sp"
+        app:backgroundTint="@android:color/white"
+        app:icon="@drawable/ic_option"
+        tools:text="Option" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/B6"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/setting"
+        android:textSize="12sp"
+        app:backgroundTint="@android:color/white"
+        app:icon="@drawable/ic_settings"
+        tools:text="Setting" />
+
+</LinearLayout>

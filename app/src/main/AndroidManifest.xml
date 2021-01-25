@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_newlogo"
+        android:label="Nere On"
+        android:roundIcon="@mipmap/ic_newlogo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".obrolan"></activity>
+        <activity android:name=".komentar" />
+        <activity android:name=".pengaturan" />
+        <activity android:name=".opsi" />
+        <activity android:name=".group" />
+        <activity android:name=".Coment" />
+        <activity android:name=".community" />
+        <activity android:name=".comment" />
+        <activity android:name=".Register" />
+        <activity android:name=".Post" />
+        <activity android:name=".invite" />
+        <activity android:name=".Search" />
+        <activity android:name=".addfriend" />
+        <activity android:name=".Chatting" />
+        <activity android:name=".ListFriend" />
+        <activity android:name=".InfoGamer" />
+        <activity android:name=".Profile" />
+        <activity android:name=".MainActivity4" />
+        <activity android:name=".Main5Activity" />
+        <activity
+            android:name=".MainActivity2"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
