@@ -71,72 +71,31 @@
         tools:ignore="MissingConstraints"
         tools:text="Search" />
 
-    <TextView
-        android:id="@+id/textView38"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="184dp"
-        android:text="@string/friend_recommendations"
-        android:textColor="#121918"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/B1" />
-
     <com.mikhaellopez.circularimageview.CircularImageView
         android:id="@+id/IP1"
         android:layout_width="51dp"
         android:layout_height="49dp"
         android:layout_margin="10dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginTop="321dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:src="@drawable/pentol2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView38"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView39"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/daniel"
-        android:textColor="#121918"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/IP1"
-        app:layout_constraintTop_toBottomOf="@+id/textView38" />
-
-    <TextView
         android:id="@+id/textView41"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:text="@string/member_of_same_group"
         android:textColor="#121918"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toEndOf="@+id/IP1"
         app:layout_constraintTop_toBottomOf="@+id/textView39"
-        tools:ignore="MissingConstraints" />
-
-    <com.mikhaellopez.circularimageview.CircularImageView
-        android:id="@+id/IP2"
-        android:layout_width="51dp"
-        android:layout_height="49dp"
-        android:layout_margin="10dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginBottom="108dp"
-        android:src="@drawable/pentol"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IP1"
-        app:layout_constraintVertical_bias="0.049"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -145,14 +104,42 @@
         android:layout_height="16dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
         android:text="@string/valie"
         android:textColor="#121918"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.005"
         app:layout_constraintStart_toEndOf="@+id/IP2"
         app:layout_constraintTop_toBottomOf="@+id/textView41"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="248dp"
+        android:text="@string/friend_recommendations"
+        android:textColor="#121918"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/B1" />
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/IP2"
+        android:layout_width="51dp"
+        android:layout_height="49dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="108dp"
+        android:src="@drawable/pentol"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IP1"
+        app:layout_constraintVertical_bias="0.036"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -171,5 +158,19 @@
         app:layout_constraintTop_toBottomOf="@+id/textView42"
         app:layout_constraintVertical_bias="0.0" />
 
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/daniel"
+        android:textColor="#121918"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintStart_toEndOf="@+id/IP1"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

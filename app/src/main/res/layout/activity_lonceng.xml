@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lonceng"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:backgroundTint="#3DBDFC">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:text="@string/send_your_personal_notification"
+                android:textColor="#121918"
+                android:textSize="24sp"></TextView>
+
+            <include
+                android:id="@+id/bell"
+                layout="@layout/bell"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+        <EditText
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:autofillHints=""
+            android:hint="@string/judul"
+            android:inputType="textLongMessage" />
+
+        <EditText
+            android:id="@+id/pesan"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:autofillHints=""
+            android:hint="@string/pesann1"
+            android:inputType="textLongMessage" />
+
+    <Button
+        android:id="@+id/buttonsendchanel"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:textSize="20sp"
+        android:background="@drawable/button_rounded"
+        android:text="@string/send1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#121918"
+        app:backgroundTint="#3DBDFC" />
+
+
+</LinearLayout>

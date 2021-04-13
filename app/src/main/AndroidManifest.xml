@@ -3,13 +3,42 @@
     package="com.example.myapplication">
 
     <application
+        android:name=".BaseNereON"
         android:allowBackup="true"
         android:icon="@mipmap/ic_newlogo"
         android:label="Nere On"
         android:roundIcon="@mipmap/ic_newlogo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".obrolan"></activity>
+        <activity
+            android:name=".RecycleViewProfile"
+            android:launchMode="singleTask"
+            android:taskAffinity=""
+            android:excludeFromRecents="true"></activity>
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Alarm" />
+        <activity
+            android:name=".bell"
+            android:label="@string/title_activity_bell"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Lonceng" />
+
+        <receiver
+            android:name=".AirplaneReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".newprofile" />
+        <activity android:name=".obrolan" />
         <activity android:name=".komentar" />
         <activity android:name=".pengaturan" />
         <activity android:name=".opsi" />

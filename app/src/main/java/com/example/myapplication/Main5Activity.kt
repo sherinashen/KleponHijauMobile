@@ -3,6 +3,8 @@ package com.example.myapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.app.NotificationManagerCompat
+import kotlinx.android.synthetic.main.activity_lonceng.*
 import kotlinx.android.synthetic.main.activity_main5.*
 
 class Main5Activity : AppCompatActivity() {
@@ -27,6 +29,16 @@ class Main5Activity : AppCompatActivity() {
 
         imageButton2.setOnClickListener{
             val intent= Intent(this,Post::class.java)
+            startActivity(intent)
+        }
+
+        imageButton19.setOnClickListener{
+            val intent= Intent(this,Lonceng::class.java)
+            startActivity(intent)
+        }
+
+        imageButton12.setOnClickListener{
+            val intent = Intent(this,Alarm::class.java)
             startActivity(intent)
         }
 

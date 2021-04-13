@@ -133,11 +133,30 @@
             app:srcCompat="@drawable/icon_menu" />
 
         <SearchView
-            android:layout_width="277dp"
+            android:layout_width="198dp"
             android:layout_height="match_parent"
             android:background="#ccfbff"
             android:contextClickable="true"
-            tools:targetApi="m" />
+            tools:targetApi="m"></SearchView>
+
+        <ImageButton
+            android:id="@+id/imageButton12"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ccfbff"
+            android:contentDescription="@string/alarm"
+            app:srcCompat="@drawable/ic_alarm"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageButton
+            android:id="@+id/imageButton19"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ccfbff"
+            android:contentDescription="@string/lonceng"
+            app:srcCompat="@mipmap/ic_notfikasi" />
 
         <ImageButton
             android:id="@+id/imageButton2"
@@ -147,6 +166,7 @@
             android:background="#ccfbff"
             android:contentDescription="@string/todo"
             app:srcCompat="@android:drawable/ic_input_add" />
+
 
     </LinearLayout>
 

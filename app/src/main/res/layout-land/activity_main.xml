@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonlogin"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/button_rounded"
+        android:onClick="onLoginButton"
+        android:text="@string/log_in"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#121918"
+        app:backgroundTint="#3DBDFC"
+        app:layout_constraintBottom_toTopOf="@+id/buttonregis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/buttonregis"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_rounded"
+        android:onClick="onRegisterButton"
+        android:text="@string/register"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#121918"
+        app:backgroundTint="#3DBDFC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="OnClick" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="576dp"
+        android:layout_height="416dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/todoo"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.505"
+        app:srcCompat="@drawable/whatsapp_image_2020_12_03_at_21_19_23"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>
