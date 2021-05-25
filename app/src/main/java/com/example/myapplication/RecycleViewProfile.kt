@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myapplication.fragment.InterfaceData
+import kotlinx.android.synthetic.main.activity_profile.*
 import kotlinx.android.synthetic.main.activity_recycle_view_profile.*
 import kotlinx.android.synthetic.main.fragment_tiga.*
 import kotlinx.android.synthetic.main.layoutrecycleview.*
@@ -18,10 +19,9 @@ class RecycleViewProfile : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recycle_view_profile)
-        val gender = intent.extras?.getString("KEY_GENDER")
-        val umur = intent.extras?.getString("KEY_UMUR")
+
         val myListContact = listOf(
-            MyContext (id = "IZxEL" , nama = "IZ",motto = "I\'ve been a gamer all my life",gender = "",umur = "")
+            MyContext (id = "IZxEL" , nama = "IZ",motto = "I\'ve been a gamer all my life")
         )
         val contactAdapter = myAdapterRecycleView(myListContact)
         profilerecycle.apply {

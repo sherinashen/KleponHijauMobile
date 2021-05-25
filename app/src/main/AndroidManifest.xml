@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".BaseNereON"
         android:allowBackup="true"
@@ -11,10 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Video"
+            android:configChanges="orientation|screenSize">
+        </activity>
+        <activity
             android:name=".RecycleViewProfile"
+            android:excludeFromRecents="true"
             android:launchMode="singleTask"
-            android:taskAffinity=""
-            android:excludeFromRecents="true"></activity>
+            android:taskAffinity="" />
 
         <receiver
             android:name=".AlarmReceiver"
@@ -59,7 +65,8 @@
         <activity android:name=".Main5Activity" />
         <activity
             android:name=".MainActivity2"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity">
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

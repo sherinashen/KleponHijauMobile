@@ -15,6 +15,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
+import android.widget.SeekBar
 import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.annotation.UiThread
@@ -29,6 +30,7 @@ import kotlinx.android.synthetic.main.activity_lonceng.*
 import kotlinx.android.synthetic.main.activity_main5.*
 import kotlinx.android.synthetic.main.activity_profile.*
 import kotlinx.android.synthetic.main.fragment_tiga.*
+import kotlinx.android.synthetic.main.layoutrecycleview.*
 import org.jetbrains.anko.AnkoAsyncContext
 import org.jetbrains.anko.doAsync
 
@@ -40,9 +42,6 @@ class Profile : AppCompatActivity(), InterfaceData {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         notificationManager = NotificationManagerCompat.from(this)
-        val intent = Intent(this,RecycleViewProfile::class.java)
-        val pendingIntent = PendingIntent.getActivity(this,0,intent,0)
-
 
 
         super.onCreate(savedInstanceState)
@@ -69,25 +68,27 @@ class Profile : AppCompatActivity(), InterfaceData {
         }
 
         buttonprint.setOnClickListener {
-            val builder = NotificationCompat.Builder(this,BaseNereON.CHANNEL_1_ID)
-                .setSmallIcon(R.mipmap.ic_newlogo_round)
-                .setLargeIcon(BitmapFactory.decodeResource(getResources(),R.mipmap.ic_newlogo_foreground))
-                .setBadgeIconType(NotificationCompat.BADGE_ICON_LARGE)
-                .setColor(Color.BLACK)
-                .setContentTitle("Show Profile Detail")
-                .setContentText("Klik Me")
-                .setPriority(NotificationCompat.PRIORITY_HIGH)
-                .setContentIntent(pendingIntent)
-                .setAutoCancel(true)
-
-            val notification = builder.build()
-            notificationManager.notify(1,notification)
+            val NotificationID = 1101
+            val ChannelAlarm = "Channel Profile"
+            val name = "ON/OFF"
+            val importance = NotificationManager.IMPORTANCE_HIGH
+            val NotifikasiChannel = NotificationChannel(ChannelAlarm,name,importance)
+            val notifydetailintent = Intent(this,RecycleViewProfile::class.java).apply {
+              flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK }
+            var pending  = PendingIntent.getActivity(this,0,notifydetailintent,PendingIntent.FLAG_UPDATE_CURRENT)
+            val builder = NotificationCompat.Builder(this,ChannelAlarm)
+                .setSmallIcon(R.mipmap.ic_newlogo)
+                .setContentText("Click Me")
+            .setContentTitle("Show Detail Profile")
+            .setAutoCancel(true)
+            .setPriority(NotificationCompat.PRIORITY_HIGH)
+            .setContentIntent(pending)
+             var notifikasimanager = this.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+            for (s in notifikasimanager.notificationChannels){
+              notifikasimanager.deleteNotificationChannel(s.id) }
+            notifikasimanager.createNotificationChannel(NotifikasiChannel)
+            notifikasimanager.notify(NotificationID,builder.build())
         }
-       // doAsync {
-           // Thread.sleep(5000L)
-            //UiThread { showMotivy() }
-    //}
-
 }
 
     override fun send(editEdit: String) {
@@ -101,31 +102,4 @@ class Profile : AppCompatActivity(), InterfaceData {
         test.replace(R.id.framelayout,fragment3).commit()
         test.addToBackStack(null)
     }
-    // @RequiresApi(Build.VERSION_CODES.O)
-    //private fun showMotivy() {
-      //  val NotificationID = 1101
-       // val ChannelAlarm = "Channel Profile"
-        //val name = "ON/OFF"
-        //val importance = NotificationManager.IMPORTANCE_HIGH
-       // val NotifikasiChannel = NotificationChannel(ChannelAlarm,name,importance)
-        //val notifydetailintent = Intent(this,RecycleViewProfile::class.java).apply {
-         //   flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-       // }
-        //var pending  = PendingIntent.getActivity(this,0,notifydetailintent,PendingIntent.FLAG_UPDATE_CURRENT)
-        //val builder = NotificationCompat.Builder(this,ChannelAlarm)
-          //  .setSmallIcon(R.mipmap.ic_newlogo)
-            //.setContentText("Click Me")
-            //.setContentTitle("Show Detail Profile")
-            //.setAutoCancel(true)
-            //.setPriority(NotificationCompat.PRIORITY_HIGH)
-            //.setContentIntent(pending)
-       // var notifikasimanager = this.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-        //for (s in notifikasimanager.notificationChannels){
-          //  notifikasimanager.deleteNotificationChannel(s.id)
-        //}
-        //notifikasimanager.createNotificationChannel(NotifikasiChannel)
-        //notifikasimanager.notify(NotificationID,builder.build())
-    //}
-
-//    private fun <T> AnkoAsyncContext<T>.UiThread(function: () -> Unit) {
 }

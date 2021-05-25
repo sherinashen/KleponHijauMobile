@@ -166,6 +166,21 @@
         app:layout_constraintVertical_bias="0.81"
         tools:ignore="MissingConstraints" />
 
+    <SeekBar
+        android:id="@+id/myseekBar"
+        android:layout_width="175dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="56dp"
+        android:max="100"
+        android:min="0"
+        android:progress="0"
+        app:layout_constraintBottom_toTopOf="@+id/framelayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonprint"
+        app:layout_constraintVertical_bias="0.008"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

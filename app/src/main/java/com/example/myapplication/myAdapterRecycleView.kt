@@ -28,12 +28,10 @@ class myHolder(view: View) : RecyclerView.ViewHolder(view){
     private val ID = view.contactid
     private val Name = view.contactname
     private val Motto = view.contactmotto
-    private val Gender = view.gender
 
     fun cari (tmp: MyContext){
         ID.text = "${ID.text} ${tmp.id}"
         Name.text = "${Name.text} ${tmp.nama}"
         Motto.text = "${Motto.text} ${tmp.motto}"
-        Gender.text = "${Gender.text} ${tmp.gender}"
     }
 }

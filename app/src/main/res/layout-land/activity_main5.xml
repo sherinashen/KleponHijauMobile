@@ -16,7 +16,7 @@
         android:contentDescription="@string/savee"
         app:layout_constraintBottom_toTopOf="@+id/imageButton11"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintHorizontal_bias="0.795"
         app:layout_constraintStart_toEndOf="@+id/textView27"
         app:srcCompat="@drawable/logo_save"
         tools:ignore="MissingConstraints" />
@@ -25,9 +25,9 @@
         android:id="@+id/comennt1"
         android:layout_width="46dp"
         android:layout_height="43dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:layout_marginBottom="56dp"
         android:background="#FFFFFF"
         android:contentDescription="@string/coment"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,35 +44,21 @@
         android:contentDescription="@string/share1"
         app:layout_constraintBottom_toTopOf="@+id/comennt1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintHorizontal_bias="0.796"
         app:layout_constraintStart_toEndOf="@+id/textView27"
         app:srcCompat="@drawable/icon_share"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="18dp"
-        android:layout_height="13dp"
-        android:layout_marginBottom="12dp"
-        android:text="@string/_14"
-        android:textColor="#121918"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton10"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.584"
-        app:layout_constraintStart_toEndOf="@+id/textView27"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/_6_m"
         android:textColor="#121918"
         app:layout_constraintBottom_toTopOf="@+id/imageButton9"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintHorizontal_bias="0.827"
         app:layout_constraintStart_toEndOf="@+id/textView18"
         tools:ignore="MissingConstraints" />
 
@@ -85,7 +71,7 @@
         android:textColor="#43D9E5"
         app:layout_constraintBottom_toTopOf="@+id/textView27"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintHorizontal_bias="0.326"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
@@ -93,12 +79,12 @@
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/publicc"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/textView27"
         app:layout_constraintEnd_toStartOf="@+id/textView22"
-        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintHorizontal_bias="0.689"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
@@ -106,18 +92,19 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
         android:text="@string/kristian_antoni"
         android:textColor="#121918"
         app:layout_constraintBottom_toTopOf="@+id/textView20"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintHorizontal_bias="0.173"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="431dp"
-        android:layout_height="54dp"
+        android:layout_width="884dp"
+        android:layout_height="62dp"
         android:background="#ccfbff"
         android:orientation="horizontal"
         tools:ignore="MissingConstraints"
@@ -126,14 +113,14 @@
 
         <ImageButton
             android:id="@+id/imageButton"
-            android:layout_width="53dp"
+            android:layout_width="101dp"
             android:layout_height="match_parent"
             android:background="#ccfbff"
             android:contentDescription="@string/todo2"
             app:srcCompat="@drawable/icon_menu" />
 
         <SearchView
-            android:layout_width="198dp"
+            android:layout_width="460dp"
             android:layout_height="match_parent"
             android:background="#ccfbff"
             android:contextClickable="true"
@@ -174,8 +161,8 @@
         android:id="@+id/relativeLayout2"
         android:layout_width="78dp"
         android:layout_height="79dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView7"
         app:layout_constraintStart_toStartOf="parent"
@@ -192,20 +179,22 @@
         android:textColor="#121918"
         app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintEnd_toStartOf="@+id/textView12"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/relativeLayout2"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.884"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
         android:text="@string/publiccc"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/relativeLayout2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintHorizontal_bias="0.004"
         app:layout_constraintStart_toEndOf="@+id/relativeLayout2"
         tools:ignore="MissingConstraints" />
 
@@ -215,12 +204,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="164dp"
         android:layout_marginLeft="164dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="24dp"
         android:text="@string/genshin_impact"
         android:textColor="#43D9E5"
         app:layout_constraintBottom_toTopOf="@+id/imageView7"
         app:layout_constraintEnd_toStartOf="@+id/imageButton6"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
@@ -233,22 +222,22 @@
         android:textColor="#121918"
         app:layout_constraintBottom_toTopOf="@+id/imageButton6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintHorizontal_bias="0.646"
         app:layout_constraintStart_toEndOf="@+id/imageView7"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.955"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="277dp"
-        android:layout_height="154dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginLeft="31dp"
-        android:layout_marginBottom="9dp"
+        android:layout_width="449dp"
+        android:layout_height="213dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginBottom="4dp"
         android:layout_weight="1"
-        android:src="@drawable/genshinimpact1"
         android:contentDescription="@string/video"
+        android:src="@drawable/genshinimpact1"
         app:layout_constraintBottom_toTopOf="@+id/textView14"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
@@ -257,9 +246,9 @@
         android:id="@+id/textView14"
         android:layout_width="284dp"
         android:layout_height="19dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginBottom="12dp"
         android:layout_weight="1"
         android:text="@string/easy_trick_to_level_up_ar_genshin_impact"
         android:textColor="#121918"
@@ -304,10 +293,10 @@
         android:contentDescription="@string/comment"
         app:layout_constraintBottom_toTopOf="@+id/textView17"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.754"
+        app:layout_constraintHorizontal_bias="0.655"
         app:layout_constraintStart_toEndOf="@+id/imageView7"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.968"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/icon_comment"
         tools:ignore="MissingConstraints" />
 
@@ -315,13 +304,13 @@
         android:id="@+id/textView15"
         android:layout_width="272dp"
         android:layout_height="21dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="4dp"
         android:text="@string/genshinimpact_gameindo_newbie"
         android:textColor="#135667"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.223"
+        app:layout_constraintHorizontal_bias="0.39"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
@@ -329,13 +318,13 @@
         android:id="@+id/textView26"
         android:layout_width="272dp"
         android:layout_height="21dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="32dp"
         android:text="@string/ragnarokmeternallove_gameindo_guest"
         android:textColor="#135667"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/comennt1"
-        app:layout_constraintHorizontal_bias="0.316"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
@@ -353,32 +342,32 @@
         app:srcCompat="@drawable/love"
         tools:ignore="MissingConstraints" />
 
+
     <ImageButton
         android:id="@+id/imageButton7"
         android:layout_width="44dp"
         android:layout_height="42dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="12dp"
         android:background="#ffffff"
         android:contentDescription="@string/save"
         app:layout_constraintBottom_toTopOf="@+id/imageButton4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.694"
+        app:layout_constraintHorizontal_bias="0.657"
         app:layout_constraintStart_toEndOf="@+id/imageView7"
         app:srcCompat="@drawable/logo_save"
         tools:ignore="MissingConstraints" />
-
 
     <TextView
         android:id="@+id/SmallSp"
         android:layout_width="28dp"
         android:layout_height="13dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/_1_2_k"
         android:textColor="#121918"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/imageButton7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintHorizontal_bias="0.652"
         app:layout_constraintStart_toEndOf="@+id/imageView7"
         tools:ignore="MissingConstraints" />
 
@@ -386,13 +375,13 @@
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="56dp"
         android:text="@string/_500"
         android:textColor="#121918"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/textView23"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintHorizontal_bias="0.754"
         app:layout_constraintStart_toEndOf="@+id/textView14"
         tools:ignore="MissingConstraints" />
 
@@ -434,22 +423,36 @@
         android:id="@+id/imageButton9"
         android:layout_width="41dp"
         android:layout_height="34dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="28dp"
         android:background="#FFFFFF"
         android:contentDescription="@string/redlove"
         app:layout_constraintBottom_toTopOf="@+id/textView24"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintHorizontal_bias="0.796"
         app:layout_constraintStart_toEndOf="@+id/textView27"
         app:srcCompat="@drawable/already_love" />
 
     <TextView
+        android:id="@+id/textView24"
+        android:layout_width="18dp"
+        android:layout_height="13dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/_14"
+        android:textColor="#121918"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.784"
+        app:layout_constraintStart_toEndOf="@+id/textView27"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
         android:id="@+id/textView27"
-        android:layout_width="292dp"
-        android:layout_height="166dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="429dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginBottom="4dp"
         android:text="@string/ketika_di_prontera_west_ada_npc_kucing_bernama_tamir_yang_memberikan_sebuah_quest_untuk_pergi_ke_duke_island_lulu_akan_memberi_kita_beberapa_pertanyaan_dan_wajib_banget_untuk_kita_jawab_agar_quest_ini_bisa_berlanjut_dan_selesai_lalu_bagaimana_cara_menjawab_lulu"
         android:textColor="#121918"
         android:textSize="15sp"

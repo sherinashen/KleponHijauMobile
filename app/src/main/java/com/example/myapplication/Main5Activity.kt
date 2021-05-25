@@ -42,6 +42,11 @@ class Main5Activity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        buttonplay.setOnClickListener{
+            val intent = Intent (this, Video::class.java)
+            startActivity(intent)
+        }
+
     }
 
 }

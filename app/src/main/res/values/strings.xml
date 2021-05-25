@@ -319,4 +319,18 @@
     <string name="i_ve_been_a_gamer_all_my_life1">I\'ve been a gamer all my life</string>
     <string name="gender_age"><![CDATA[Gender & Age :]]></string>
     <string name="profile_details">Profile Details</string>
+    <string name="gender12">Gender</string>
+    <string name="gender13">Gender :</string>
+    <string name="umur12">Umur :</string>
+    <string name="gmbr_profile">gmbr profile</string>
+    <string name="show">Show</string>
+    <string name="e_mail12">E-Mail</string>
+    <string name="password4">Password</string>
+    <string name="email2">Email</string>
+    <string name="close">Close</string>
+    <string name="stay">Stay</string>
+    <string name="save12">SAVE</string>
+    <string name="read">READ</string>
+    <string name="create_post_file"><![CDATA[Create Post & File]]></string>
+    <string name="file_name">File Name</string>
 </resources>

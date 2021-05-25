@@ -20,7 +20,7 @@
             android:background="#ccfbff"
             android:fontFamily="sans-serif"
             android:gravity="center"
-            android:text="@string/create_post"
+            android:text="@string/create_post_file"
             android:textAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
             android:textColor="@android:color/black"
             android:textSize="21sp" />
@@ -28,10 +28,28 @@
     </LinearLayout>
 
     <EditText
+        android:id="@+id/editTextnama"
+        android:layout_width="351dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="52dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center|center_horizontal"
+        android:hint="@string/file_name"
+        android:inputType="textUri|textShortMessage"
+        android:textColor="#121918"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+    </EditText>
+
+    <EditText
         android:id="@+id/editTextTextPersonName4"
         android:layout_width="206dp"
         android:layout_height="44dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="52dp"
         android:autofillHints=""
         android:background="#CCFBFF"
         android:ems="10"
@@ -39,9 +57,9 @@
         android:inputType="textLongMessage"
         android:textColor="#121918"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintHorizontal_bias="0.137"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextnama" />
 
     <Button
         android:id="@+id/public1"
@@ -54,10 +72,10 @@
         app:backgroundTint="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintHorizontal_bias="0.894"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
-        app:layout_constraintVertical_bias="0.432"
+        app:layout_constraintVertical_bias="0.74"
         tools:ignore="MissingConstraints"
         tools:text="Public >" />
 
@@ -65,14 +83,14 @@
         android:id="@+id/editTextTextPersonName5"
         android:layout_width="210dp"
         android:layout_height="96dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
         android:autofillHints=""
         android:background="#CCFBFF"
         android:ems="10"
         android:hint="@string/type_your_message_here"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
 
@@ -81,17 +99,53 @@
         android:layout_width="128dp"
         android:layout_height="39dp"
         android:background="@drawable/button_rounded"
-        android:text="@string/updatee"
+        android:text="@string/save12"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#121918"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:backgroundTint="#3DBDFC"
         app:layout_constraintBottom_toTopOf="@+id/textView37"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName5"
         app:layout_constraintTop_toBottomOf="@+id/public1"
-        app:layout_constraintVertical_bias="0.335"
+        app:layout_constraintVertical_bias="0.229"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="128dp"
+        android:layout_height="39dp"
+        android:background="@drawable/button_rounded"
+        android:text="@string/save12"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#121918"
+        android:textSize="14sp"
+        app:backgroundTint="#3DBDFC"
+        app:layout_constraintBottom_toTopOf="@+id/textView37"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName5"
+        app:layout_constraintTop_toBottomOf="@+id/public1"
+        app:layout_constraintVertical_bias="0.229"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="128dp"
+        android:layout_height="39dp"
+        android:background="@drawable/button_rounded"
+        android:text="@string/read"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#121918"
+        android:textSize="14sp"
+        app:backgroundTint="#3DBDFC"
+        app:layout_constraintBottom_toTopOf="@+id/textView37"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName5"
+        app:layout_constraintTop_toBottomOf="@+id/public1"
+        app:layout_constraintVertical_bias="0.493"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -103,17 +157,21 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/textView37"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView37"
         android:layout_width="385dp"
         android:layout_height="120dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="84dp"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,11 @@
 package com.example.myapplication.fragment
 
+import android.app.PendingIntent
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
+import android.graphics.BitmapFactory
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,22 +14,20 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.core.app.NotificationCompat
+import androidx.core.app.NotificationManagerCompat
+import androidx.fragment.app.FragmentTransaction
+import androidx.navigation.fragment.findNavController
+import com.example.myapplication.BaseNereON
+import com.example.myapplication.Profile
 import com.example.myapplication.R
 import com.example.myapplication.RecycleViewProfile
 import kotlinx.android.synthetic.main.activity_alarm.*
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [FragmentSatu.newInstance] factory method to
- * create an instance of this fragment.
- */
 class FragmentSatu : Fragment() {
-    // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
 
@@ -40,20 +43,19 @@ class FragmentSatu : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_satu,container, false)
+        interfaceData = activity as InterfaceData
         val save = view.findViewById<Button>(R.id.buttonsave)
         val gender = view.findViewById<EditText>(R.id.editTextTextPersonName10)
         val umur = view.findViewById<EditText>(R.id.editTextTextPersonName11)
+        val preferences = androidx.preference.PreferenceManager.getDefaultSharedPreferences(activity)
 
         save.setOnClickListener {
-            val intent = Intent(context,RecycleViewProfile::class.java)
-            intent.putExtra("KEY_GENDER",gender.text.toString())
-            intent.putExtra("KEY_UMUR",umur.text.toString())
-            startActivity(intent)
+            interfaceData.send(gender.text.toString() +" , "+ umur.text.toString() + "Tahun")
         }
         return view
     }
+
 
     companion object {
         /**
